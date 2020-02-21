@@ -7,5 +7,4 @@ jobs:
     - uses: actions/checkout@v2
     - run: mvn deploy --settings settings.xml
       env: 
-        Token: ${{secrets.PackagePAT}}
         PackagePAT: ${{secrets.PackagePAT}}
