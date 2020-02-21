@@ -1,0 +1,10 @@
+name: deploy maven package
+on: push
+jobs: 
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v2
+    - run: mvn deploy -Dregistry=https://maven.pkg.github.com/zhuorg -Dtoken=$Token
+      env: 
+        Token: ${{secrets.PackagePAT}}
