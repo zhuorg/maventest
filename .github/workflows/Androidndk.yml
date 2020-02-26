@@ -4,4 +4,7 @@ jobs:
   check: 
     runs-on: ubuntu-latest
     steps: 
-    - run: sdkmanager --list
+ 
+    - run: |
+        cd android_sdk/tools/bin/
+        sdkmanager --list
