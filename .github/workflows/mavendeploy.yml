@@ -1,5 +1,5 @@
 name: deploy maven package
-on: push
+on: check_run
 jobs: 
   job1:
     runs-on: ubuntu-latest
