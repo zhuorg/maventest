@@ -1,0 +1,7 @@
+name: android NDK
+on: push
+jobs:  
+  check: 
+    runs-on: unbuntu-latest
+    steps: 
+    -run: sdkmanager --list
