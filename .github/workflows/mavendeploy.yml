@@ -6,6 +6,6 @@ jobs:
     steps: 
     - uses: actions/checkout@v2
     # --settings settings.xml
-    - run: mvn deploy 
+    - run: mvn deploy --settings settings.xml
       env: 
         PackagePAT: ${{secrets.PackagePAT}}
