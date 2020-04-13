@@ -1,5 +1,5 @@
 name: android NDK
-on: push
+on: check_suite
 jobs:  
   check: 
     runs-on: ubuntu-latest
