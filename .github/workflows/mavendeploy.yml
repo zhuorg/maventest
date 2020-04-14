@@ -9,3 +9,4 @@ jobs:
     - run: mvn deploy --settings settings.xml
       env: 
         PackagePAT: ${{secrets.PackagePAT}}
+        USENAME: ${{ github.actor }}
