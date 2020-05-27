@@ -1,11 +1,9 @@
 name: android NDK
 on: 
-  push:
-    paths:
-      - '.github/workflows/Androidndk.yml'
+  registry_package:
 jobs:  
   job2:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
