@@ -19,4 +19,4 @@ jobs:
       run: mvn deploy --settings settings.xml
       env:
         USERNAME: ${{github.actor}}
-        PackagePAT: ${{secrets.PackagePAT}}
+        PackagePAT: ${{secrets.PublishPG}}
