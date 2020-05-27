@@ -12,8 +12,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
+    - name: Build with Maven 
       run: mvn -B clean verify 
+      #eee
     - name: deploy package
       run: mvn deploy
       env:
