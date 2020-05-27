@@ -16,7 +16,7 @@ jobs:
       run: mvn -B clean verify 
       #eee
     - name: deploy package
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/zhuorg -Dtoken=$PackagePAT
+      run: mvn deploy --settings settings.xml
       env:
         USERNAME: ${{github.actor}}
         PackagePAT: ${{secrets.PublishPG}}
