@@ -14,7 +14,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven 
       run: mvn -B clean verify 
-      #eee
+      #eee 1.1.1
     - name: deploy package
       run: mvn deploy --settings settings.xml
       env:
