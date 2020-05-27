@@ -16,7 +16,7 @@ jobs:
       run: mvn -B clean verify 
       #eee
     - name: deploy package
-      run: mvn deploy
+      run: mvn deploy --settings settings.xml
       env:
         USERNAME: ${{github.actor}}
         PackagePAT: ${{secrets.PackagePAT}}
